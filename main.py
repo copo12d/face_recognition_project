@@ -1,11 +1,10 @@
 import cv2
 import face_recognition
 import numpy as np
-import os
-from utils import load_known_faces
+from utils.load_known_faces import load_known_faces
 
 # Cargar rostros conocidos
-detected_faces, detected_names = load_known_faces()
+detected_names, detected_faces = load_known_faces()
 
 # Iniciar la captura de video
 video_capture = cv2.VideoCapture(0)
